@@ -28,6 +28,8 @@ Validate the HTML code.
 Publish the website in the given URL.
 
 ## PROGRAM:
+HOME.HTML
+
 home.html
 
 <!DOCTYPE html>
@@ -35,97 +37,305 @@ home.html
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Company</title>
+    <title>Softweb Home</title>
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-image: url(https://img.freepik.com/free-vector/realistic-neon-lights-background_23-2148907367.jpg);
-            background-size: cover;
+        *{
+            margin:0;
+            padding:0;
         }
-
-        header {
-            background-color: rgba(51, 51, 51, 0.7); 
-            color: #fff;
-            padding: 10px 0;
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            font-family: 'verdana', 'verdana';
+        #nav{
+            background-color:wheat;
+            color:#000000;
+            padding: 15px;
+    
         }
-
-        nav {
-            overflow: hidden;
-            background-color: #2478a1;
+        li,h1,ul{
+            display:inline;
         }
-
-        nav a {
-            float: right;
-            display: block;
-            color: #fff;
-            text-align: left;
-            padding: 15px 20px;
+        ul{
+            margin-left:25%;
+        }
+        a{
+            color:blue;
             text-decoration: none;
         }
-
-        .company-name {
-            font-size: 40px;
-            margin: 20px;
+        a:hover{
+            color:rgb(255, 255, 252);
+            cursor:pointer;
+ }
+        input{
+            width: 60%;
+            padding: 15px;
         }
-
-        nav a:hover {
-            background-color: rgba(111, 205, 248, 0.7); 
-            color: #333;
-        }
-
-        .content {
-            padding: 100px 0px 200px; 
-            color:#fff;
-            text-align: left;
-            font-size: 50px; 
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
+            .searchbar{
+            padding:50px;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        }
+      
+        .box {
+    display: block;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: black;
+    width: 400px;
+    min-height: 300px;
+    font-size: 20px;
+    background-color: lightgoldenrodyellow;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+        .heading1{
+            color:#000000;
+            text-align: center;
+            padding-top: 20px;
+        }
+        .heading2{
+            color:rgb(238, 130, 130);
+            text-align: justify;
+            font-size: 20px;
+            margin: 50px auto 20px;
+            width:80%
+        }
+        .edge{
+            padding-left: 400px;
+        }
+        .box{
+            text-align: center;
+        }
+ p{
+            color:#000000;
+            text-align: center;
+        }
+    
+        .bottomdiv{
+ background-color:aqua;
+            color:black;
+            text-align: center;
+            position:relative;
+            display:block;
+            margin-top: 105px;
+
+        }
+        table{
+            margin-left: 40px;
         }
     </style>
 </head>
-<body>
-
-<header>
-    <h1 class="company-name">Tech Innovations </h1>
-</header>
-
-<nav>
-    <a href="contact.html">Contact us</a>
-    <a href="products.html">Products</a>
-    <a href="people.html">People</a>
-    <a href="home.html">Home</a>
-</nav>
-
-<div class="content">
-    <div class="company-description">
-        <pre>
-            Build skills
-            as you learn
-            with over
-            many people here.
-        </pre>
+<body background="backk.png">
+    <div class="header">
+        <nav id="nav">
+            <h1>
+                Santhosh DEVELOPMENT
+            </h1>
+                <ul>
+                    <li class="li1"> 
+                        <a href="home.html" target="_blank">Home  |</a>
+                    </li>
+                    <li class="li2"> 
+                        <a href="product.html" target="_blank">Products  |</a>
+                    </li>
+                    <li class="li4"> 
+                        <a href="people.html" target="_blank">People  |</a>
+                    </li>
+                    <li class="li5"> 
+                        <a href="contact.html" target="_blank">Contact</a>
+                    </li>
+                </ul>
+        </nav>
     </div>
-</div>
+    <div class="searchbar">
+    <input placeholder="search">
+    </div>
+        <div><pre class="heading2"><i><b>
+" Do You have a problem you can find your solution here."<b></i></pre></div>
+        <div class="center">
+            <div class="box">
+            <h1 class="heading1">LOGIN HERE</h1>
+            <br>
+            <br>
+            <form>
+                <table cellpadding="10px" cellspacing="15px">
+                    <tr>
+                        <td>
+                           <p> Username:</p>
+                        </td>
+                        <td>
+                            <input type="email" name="name" placeholder="Enter a Email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p> Password:</p>
+                        </td>
+                        <td>
+                            <input type="password" name="pwd" placeholder="Enter a Password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="LOGIN" style="background-color: lightseagreen; color:white;">
+                        </td>
+                    </tr>
+                </table>
+                
+            </form>
+            </div>
+        </div>
+    <div class="bottomdiv">
+        <p> Copyrights @2024 and Developed by santhosh kumar B(212223230193))
+</body>
+<html>
 
-<footer>
-    &copy; Created and developed by Jaswanth
-</footer>
+PRODUCT.HTML
 
+product.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Softweb Products</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        #nav{
+            background-color:rgb(179, 229, 245);
+            color:pink;
+            padding: 15px;
+    
+        }
+        li,.heading1,ul{
+            display:inline;
+        }
+        ul{
+            margin-left:45%
+        }
+        li{
+            color:wheat;
+        }
+        li:hover{
+            color:white;
+            cursor:pointer;
+        }
+ input{
+            width: 18%;
+            padding: 15px;
+        }
+            .searchbar{
+            padding:50px;
+            text-align: center;
+        }
+        .box{
+            border-color:wheat;
+            border-width:2px;
+            border-style:solid;
+            display: inline-block;
+            width: 414px;
+        }
+        .product{
+
+            text-align: center;
+        }
+        .box{
+            background-color:rgb(255, 224, 254);
+            cursor:pointer;
+        }
+        a{
+            color:#062d41;
+            text-decoration: none;
+        }
+        a:hover{
+            color:white;
+            cursor:pointer;
+        }
+        .heading2{
+            padding-top: 100px;
+            padding-bottom: 10px;
+            text-align: center;
+            color:black;
+        }
+      p{
+            color:brown;
+            text-align: center;
+        }
+   b{
+            width: 300px;
+            height: 200px;
+        }
+    h1{
+            color:black;
+            text-align: center;
+        }
+        .bottomdiv{
+ background-color:aqua;
+            color:black;
+            text-align: center;
+            position:relative;
+            display:block;
+            margin-top: 230px;
+
+        }
+    </style>
+</head>
+<body background="backk.png">
+    <div class="header">
+        <nav id="nav">
+            <h1 class="heading1">santhoTECH</h1>
+                <ul>
+                    <li class="li1"> 
+                        <a href="home.html" target="_blank">Home  |</a>
+                    </li>
+                    <li class="li2"> 
+                        <a href="product.html" target="_blank">Products  |</a>
+                    </li>
+                    <li class="li4"> 
+                        <a href="people.html" target="_blank">People  |</a>
+                    </li>
+                    <li class="li5"> 
+                        <a href="contact.html" target="_blank">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <h1 class="heading2">PRODUCTS</h1>
+        <br>
+        <div class="product">
+            <div class="box">
+               <b><img src="python.jpeg" ></b>
+                <h1>PYTHON</h1>
+                <p>
+                   
+            Learn python from scratch and we also teach you additional frameworks</p>
+            </div>
+            <div class="box">
+                <img src="cprogram.jpeg">
+                <h1>Introduction to C</h1>
+                <p>Learn C Language and it's Functions </p>
+            </div>
+            <div class="box">
+                <img src="html.png">
+                <h1>HTML</h1>
+                <p>Learn HTML and and how to design web pages in an effective way</p>
+            </div>
+            <div class="box">
+                <img src="java.jpeg">
+                <h1>JAVA</h1>
+                <p>Learn Java and Concepts such as abstraction,encapsulation,inheritance and polymorphism</p>
+        </div>
+    </div>
+    <div class="bottomdiv">
+        <b>Copyrights @2024 and Developed by santhosh kumar B(212223230193)</b>
+    </div>
 </body>
 </html>
+
+PEOPLE.HTML
+
 people.html
 
 <!DOCTYPE html>
@@ -133,341 +343,359 @@ people.html
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Team</title>
+    <title>Softweb Members</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #0e0442;
+        *{
+            margin:0;
+            padding:0;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
-
-        header {
-            background-color: #333;
-            color: #fff;
+        #nav{
+            background-color:rgb(179, 229, 245);
+            color:#000000;
+            padding: 15px;
+    
+        }
+        li,.heading1,ul{
+            display:inline;
+        }
+        ul{
+            margin-left:45%
+        }
+        li{
+            color:lightblue;
+        }
+        li:hover{
+            color:#fafafa;
+            cursor:pointer;
+        }
+        input{
+            width: 60%;
+            padding: 15px;
+        }
+        a{
+            color:teal;
+text-decoration: none;
+        }
+        a:hover{
+            color:#ffffff;
+            cursor:pointer;
+        }
+        .heading2{
+            padding-top: 100px;
+            padding-bottom: 10px;
             text-align: center;
-            padding: 10px 0;
+            color:#63b8c0;
         }
-
-        .team-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .person {
-            width: 250px;
-            margin: 20px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        .bottomdiv{
+            background-color:aqua;
+            color:black;
             text-align: center;
-        }
+            position:relative;
+            display:block;
+            margin-top: 0.7px;
 
-        .person img {
-            width: 150px;
-            height: 150px;
+        }
+        img{
             border-radius: 50%;
-            margin-bottom: 10px;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <h1>OUR TEAM</h1>
-</header>
-
-<div class="team-container">
-    <div class="person">
-        <img src="https://www.fcbarcelona.com/photo-resources/2020/02/19/d8f54b57-05d8-46bc-854e-014d7a9a9e46/2635_01_24.jpg?width=1200&height=750" alt="Person 1">
-        <h3>Maridona</h3>
-        <p>CEO</p>
-    </div>
-
-    <div class="person">
-        <img src="https://ktastro.blob.core.windows.net/images/Celebrity/BillGates.png" alt="Person 2">
-        <h3>Bill Gates</h3>
-        <p>COO</p>
-    </div>
-
-    <div class="person">
-        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQGeAGP53IJZqX6XC212fwBCpiWuOYVez3ABH7v5UvucwXOHRxM" alt="Person 3">
-        <h3>Ratan Tata</h3>
-        <p>CTO</p>
-    </div>
-
-    <div class="person">
-        <img src="https://media.npr.org/assets/img/2023/01/09/scott_edit_toned-2_custom-2bf7c35edc7c77a1766950f8fa8d6ca56a1523c8.jpg?s=1100&c=50&f=jpeg" alt="Person 4">
-        <h3>MacKenzie Scott</h3>
-        <p>Marketing Manager</p>
-    </div>
-
-    <div class="person">
-        <img src="https://cdn.britannica.com/09/225009-050-9BA6E880/French-businessman-Bernard-Arnault-2017.jpg" alt="Person 5">
-        <h3>bernard arnault</h3>
-        <p>Product Manager</p>
-    </div>
-
-    <div class="person">
-        <img src="https://c.ndtvimg.com/2024-03/339tnn4_sini-shetty_625x300_09_March_24.jpg" alt="Person 6">
-        <h3>sini chetty</h3>
-        <p>Software Engineer</p>
-    </div>
-</div>
-
-<footer>
-    <p>&copy; Created and developed by jaswanth</p>
-</footer>
-
-</body>
-</html>
-products.html
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRODUCT CATALOG</title>
-    <style>
-        body {
-            font-family: 'Verdana';
-            margin: 0;
-            padding: 0;
-            background-image: url(back.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        .product-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .product {
-            color: #d53299;
             width: 200px;
-            margin: 20px;
-            padding: 10px;
+            display: inline;
+            padding:15px;
+            
+        }
+        .person{
+            margin: 150px;
             text-align: center;
         }
-
-        .product img {
-            width: 150px;
-            height: 150px;
-            margin-bottom: 10px;
-        }
-
-        .product-details{
-            background-color: #1990e5;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        footer {
-            background-color: #333;
-            color: #0db460;
+        b,p{
+            color:black;
             text-align: center;
-            padding: 5px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
-    </style>
+      
+</style>
 </head>
 <body>
+    <div class="header">
+        <nav id="nav">
+            <h1 class="heading1">SanthoTECH</h1>
+                <ul>
+                    <li class="li1"> 
+                        <a href="home.html" target="_blank">Home  |</a>
+                    </li>
+                    <li class="li2"> 
+                        <a href="product.html" target="_blank">Products  |</a>
+                    </li>
+                    <li class="li4"> 
+                        <a href="people.html" target="_blank">People  |</a>
+                    </li>
+                    <li class="li5"> 
+                        <a href="contact.html" target="_blank">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <h1 class="heading2">Members</h1>
+        <table class="person">
+            <tr>
+                <td>
+                    <img src=c:\Users\admin\Documents\profile saveetha.jpg width="100" height="160">
+                </td>
+		
 
-<header>
-    <h1>PRODUCT CATALOG</h1>
-</header>
-
-<div class="product-container">
-    <div class="product">
-        <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RW16TLT?ver=99ac&q=90&m=6&h=705&w=1253&b=%23FFFFFFFF&f=jpg&o=f&p=140&aim=true" alt="Product 1">
-        <h3>Product 1</h3>
-        <p>Laptop</p>
+                <td>
+                    <img src=c:\Users\admin\Downloads\travis scott.jpeg width="100" height="160">
+                </td>
+		
+                <td>
+                   <img src=c:\Users\admin\Downloads\The-Weekend-goes-back-to-his-birth-name-Abel-Tesfaye.jpeg width="100" height="160">
+                </td>
+            </tr>
+            <tr>
+                
+                <td>
+                    <b>santhosh </b>
+                    <p>Co-Founder</p>
+                </td>
+                <td>
+                    <b>travis scott</b>
+                    <p>Asst.Director</p>
+                </td>
+                <td>
+                    <b>the weekend</b>
+                    <p>Marketing Director</p>
+                </td>
+              
+            </tr>
+        </table>
     </div>
-
-    <div class="product">
-        <img src="https://images.samsung.com/is/image/samsung/p6pim/in/2401/gallery/in-galaxy-s24-sm-s921blbcins-thumb-539572328" alt="Product 1">
-        <h3>Product 2</h3>
-        <p>Mobile</p>
+    <div class="bottomdiv">
+<p>Copyrights @2024 and Developed BY santhosh kumar B (212223230193)</p>
     </div>
-
-    <div class="product">
-        <img src="https://www.livemint.com/lm-img/img/2023/09/23/600x338/rhh_1695470152346_1695470161360.jpg" alt="Product 1">
-        <h3>Product 3</h3>
-        <p>Watches</p>
-    </div>
-
-    <div class="product">
-        <img src="https://sony.scene7.com/is/image/sonyglobalsolutions/wh-ch520_Primary_image?$categorypdpnav$&fmt=png-alpha" alt="Product 1">
-        <h3>Product 4</h3>
-        <p>Earphones</p>
-    </div>
-
-    <div class="product">
-        <img src="https://i.pinimg.com/originals/e7/5d/db/e75ddbda351d44e24b6b8099fa200aad.jpg" alt="Product 1">
-        <h3>Product 5</h3>
-        <p>camera</p>
-    </div>
-
-    <div class="product">
-        <img src="https://p3-ofp.static.pub/ShareResource/na/tablets-splitter/featured-cards/lenovo-tab-p11-android-tablets.png" alt="Product 1">
-        <h3>Product 6</h3>
-        <p>Tablets</p>
-    </div>
-
-</div>
-
-<footer>
-    <p>&copy; Created and developed by Jaswanth.</p>
-</footer>
-
 </body>
 </html>
-contact.html 
+
+CONTACT.HTML
+
+contact.html
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Softweb contact</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #112f4d;
+        *{
+            margin:0;
+            padding:0;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
-
-        header {
-            background-color: #343a40;
-            color: #fff;
+        #nav{
+            background-color:rgb(153, 198, 125);
+            color:#000000;
+            padding: 15px;
+    
+        }
+        li,.heading1,ul{
+            display:inline;
+        }
+        ul{
+            margin-left:45%
+        }
+        li{
+            color:#074565;
+  }
+        li:hover{
+            color:white;
+            cursor:pointer;
+        }
+        input{
+            width: 60%;
+            padding: 15px;
+        }
+            .searchbar{
+            padding:50px;
             text-align: center;
-            padding: 20px 0;
         }
-
-        .contact-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 50px 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+        .box{
+            border-color:rgb(254, 253, 253);
+            border-width:2px;
+            border-style:solid;
+            display: inline-block;
+            width: 414px;
         }
+        .product{
 
-        .contact-info {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            padding: 40px;
-            flex: 1;
-            margin-right: 20px;
+            text-align: center;
         }
-
-        .contact-info h2 {
-            color: #343a40;
-            font-size: 28px;
-            margin-bottom: 20px;
+        .box{
+            background-color:rgb(66, 16, 66);
+            cursor:pointer;
         }
-
-        .contact-info p {
-            color: #6c757d;
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-
-        .contact-info p:last-child {
-            margin-bottom: 0;
-        }
-
-        .contact-info a {
-            color: #007bff;
+        a{
+            color:b#007cb9;
             text-decoration: none;
         }
-
-        .contact-info a:hover {
-            text-decoration: underline;
+        a:hover{
+color:rgb(255, 255, 255);
+            cursor:pointer;
         }
-
-        #map {
-            flex: 1;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        footer {
-            background-color: #343a40;
-            color: #fff;
+        .heading2{
+            padding-top: 100px;
+            padding-bottom: 10px;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            color:#c00000;
+        }
+        .table1{
+            color:darkgreen;
+            font-size: large;
+        }
+        .contact{
+            margin-left:400px;
+        }
+        .heading3{
+            padding-top: 30px;
+            padding-bottom: 10px;
+            text-align: center;
+            color:#5eb3e1;
+        }
+        .table2{
+            color:#000000;
+            font-size: large;
+            background-color:rgb(187, 208, 219);
+            border-radius: 5px;
+            border-style:dotted;
+            border-color: rgb(125, 199, 213);
+
+        }
+        .queries{
+            margin-left:400px;
+        }
+        .bottomdiv{
+            background-color:aqua;
+            color:#000000;
+            text-align: center;
+            position:relative;
+display:block;
+            margin-top: 24px;
+
         }
     </style>
 </head>
-<body>
-
-<header>
-    <h1>Contact Us</h1>
-</header>
-
-<div class="contact-container">
-    <div class="contact-info">
-        <h2>Company Name</h2>
-        <p><strong>Address:</strong> 123 Elm Street, Springfield, IL 62701, United States</p>
-        <p><strong>Email:</strong> <a href="mailto:info@example.com">techinnovation@gmail.com</a></p>
-        <p><strong>Phone:</strong> <a href="tel:+15551234567">+1 (555) 123-4567</a></p>
-        
+<body background="backk.png">
+    <div class="header">
+        <nav id="nav">
+            <h1 class="heading1">SanthoTECH </h1>
+                <ul>
+                    <li class="li1"> 
+                        <a href="home.html" target="_blank">Home  |</a>
+                    </li>
+                    <li class="li2"> 
+                        <a href="product.html" target="_blank">Products  |</a>
+                    </li>
+                    <li class="li4"> 
+                        <a href="people.html" target="_blank">People  |</a>
+                    </li>
+                    <li class="li5"> 
+                        <a href="contact.html" target="_blank">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <h1 class="heading2">CONTACT US</h1>
+        <div class="contact">
+            <table cellpadding="15px" cellspacing="15px" class="table1">
+                <tr>
+                    <td>
+                        ADDRESS :
+                    </td>
+                    
+                    <td>
+                        chennai
+</td>
+                </tr>
+                <tr>
+                    <td>
+                        LANDMARK :
+                    </td>
+                    <td>
+                        Near saveetha college
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        EMAIL :
+                    </td>
+                    <td>
+                        santho@gmail.com
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        PHONE :
+                    </td>
+                    <td>
+                        8098934530
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h2 class="heading3">QUERIES</h2>
+            <div class="queries">
+                <table cellpadding="15px" cellspacing="15px" class="table2">
+                    <tr>
+                        <td>
+ NAME :
+                        </td>
+                        <td>
+                            <input type="name" placeholder="Enter your name"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            EMAIL :
+                        </td>
+                        <td>
+                            <input type="email" placeholder="Enter your E-mail">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Your Query :
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Enter your Queries">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" style="background-color: darkcyan; color:#000000;">
+                        </td>
+                    </tr>
+            </table>
+        </div>
+        <div class="bottomdiv">
+            <p>Copyrights @2024 and Developed by santhosh kumar B(212223230193)</p>
+        </div>
     </div>
-    <div id="map">
-        <!-- Google Maps embed code goes here -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.554458216143!2d-89.64965458458049!3d39.7836443908857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88762e1e50fc0adf%3A0x2f7d3bc20b9e6b18!2s123%20Elm%20St%2C%20Springfield%2C%20IL%2062701%2C%20USA!5e0!3m2!1sen!2suk!4v1621469930245!5m2!1sen!2suk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-</div>
-
-<footer>
-    <p>&copy; Created and developed by Jaswanth</p>
-</footer>
-
 </body>
 </html>
-
 
 
 ## OUTPUT:
 
-![image](https://github.com/Santhoshstudent/softweb/assets/145446853/a6dc7dd6-4dfe-47ee-b9e6-4697bfd8c3d7)
+![image](https://github.com/Santhoshstudent/softweb/assets/145446853/7fe3ed58-5388-4646-8ed1-2ebb26de82c1)
 
-![image](https://github.com/Santhoshstudent/softweb/assets/145446853/c2ed9238-e1d3-4d9f-92f9-e93376f777c7)
+![image](https://github.com/Santhoshstudent/softweb/assets/145446853/6b3df511-4887-407a-b7b6-7c19813ceacb)
 
-![image](https://github.com/Santhoshstudent/softweb/assets/145446853/5f54dd9b-a34f-49d0-a8bc-e46f8aa505a9)
+![5_12_2024 7_16_13 PM](https://github.com/Santhoshstudent/softweb/assets/145446853/f04aa561-5ca1-47d8-aa90-03da4727faa8)
+
+![image](https://github.com/Santhoshstudent/softweb/assets/145446853/0d749215-32d4-441b-8d60-327a15d023ce)
+
+
+
+
 
 
 
